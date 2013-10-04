@@ -20,6 +20,7 @@ class DropboxAdapterFactory implements AdapterFactoryInterface
         $container
             ->setDefinition($id, new DefinitionDecorator('knp_gaufrette.adapter.dropbox'))
             ->addArgument(new Reference($config['api_id']))
+            ->addArgument($config['directory'])
         ;
     }
 
@@ -39,6 +40,7 @@ class DropboxAdapterFactory implements AdapterFactoryInterface
         $builder
             ->children()
                 ->scalarNode('api_id')->isRequired()->end()
+                ->scalarNode('directory')->defaultNull()->end()
             ->end()
         ;
     }
