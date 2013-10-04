@@ -1,7 +1,7 @@
 {
-    "name":         "knplabs/knp-gaufrette-bundle",
+    "name":         "tsslabs/knp-gaufrette-bundle",
     "type":         "symfony-bundle",
-    "description":  "Allows to easily use the Gaufrette library in a Symfony project",
+    "description":  "Allows to easily use the Gaufrette library in a Symfony project, with Dropbox Adapter",
     "keywords":     ["file", "filesystem", "media", "abstraction"],
     "homepage":     "http://knplabs.com",
     "license":      "MIT",
@@ -12,7 +12,7 @@
         },
         {
             "name":     "The contributors",
-            "homepage": "https://github.com/knplabs/KnpGaufretteBundle/contributors"
+            "homepage": "https://github.com/tsslabs/KnpGaufretteBundle/contributors"
         }
     ],
     "require":      {
